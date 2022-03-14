@@ -3,7 +3,13 @@ body{
     padding: 0%;
 }
 
+#choice_container{
+    opacity: 1;
+}
 
+#result_container{
+    opacity: 0;
+}
 
 .choice-container{
     position: absolute;
@@ -19,14 +25,18 @@ body{
     display: flex;
     justify-content: space-around;
     flex-basis: 100%;
-    z-index: -1;
-    opacity: 1;
+  
+   
     align-items: center;
 
 
     img{
-        cursor: pointer;
-        z-index: 199;
+       
+
+       
+            cursor: pointer;
+            z-index: 199;
+  
     }
 }
 
@@ -35,7 +45,7 @@ body{
 .result-container{
     position: absolute;
    
-  
+    
     width: 70%;
     top: 40%;
     right: 15%;
@@ -46,9 +56,9 @@ body{
     display: flex;
     justify-content: space-around;
     flex-basis: 100%;
-    opacity: 0;
+  
     align-items: center;
-
+  
     #user_choice{
         box-shadow: 10px 10px 5px rgb(62, 71, 192);
     }
@@ -65,3 +75,4 @@ body{
         color: green;
     }
 }
+

@@ -5,19 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/index.css">
+    <script src="/assets/javascript/index.js"></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="choice-container">
-        <img src="/assets/images/paper.png" alt="">
-        <img src="/assets/images/rock.png" alt="">
-        <img src="/assets/images/scissors.png" alt="">
+    <div id="choice_container" class="choice-container active" >
+        <img id="paper" onclick="getResult('paper')" src="/assets/images/paper.png" alt="">
+        <img id="rock" onclick="getResult('rock')" src="/assets/images/rock.png" alt="">
+        <img id="scissors" onclick="getResult('scissors')" src="/assets/images/scissors.png" alt="">
+        
     </div>
 
-    <div class="result-container">
-        <img id="user_choice" src="/assets/images/paper.png" alt="">
-        <h1 class="win_message">fenjrget</h1>
-        <img id="com_choice" src="/assets/images/scissors.png" alt="">
+    <div id="result_container" class="result-container " >
+        <img id="user_choice"  alt="">
+        <h1 id="result_message"></h1>
+        <img id="com_choice"  alt="">
+       
     </div>
+
+    <button onclick="reset()">reset</button>
 </body>
 </html>
